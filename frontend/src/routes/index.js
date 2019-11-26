@@ -7,8 +7,6 @@ import Home from '../pages/Home';
 import Perfil from '../pages/Perfil';
 import Projetos from '../pages/Projetos';
 import Feed from '../pages/Feed';
-import Instituicao from '../pages/Instituicao';
-import Trilhas from '../pages/Trilhas';
 
 export default function Routes() {
   return (

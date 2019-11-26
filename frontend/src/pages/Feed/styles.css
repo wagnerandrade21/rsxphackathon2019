@@ -136,14 +136,13 @@ nav > div i {
 .newPost {
   display: flex;
   flex-direction: row;
-  width: 1600px;
+  max-width: 1600px;
   margin: 20px auto 20px;
   border: 2px #4f5467 solid;
   border-radius: 20px;
   background: transparent;
   padding: 15px;
   font-size: 13px;
-
 }
 
 .newPost input {

@@ -4,6 +4,7 @@ import PostItem from './PostItem'
 import avatar from '../../../assets/user.svg'
 
 class PostList extends Component {
+
   state = {
     posts: [
       {
@@ -50,6 +51,7 @@ class PostList extends Component {
   render() {
     return (
       <div className="postList">
+        
         {this.state.posts.map(post => <PostItem key={post.id} {...post} />)}
       </div>
     )
