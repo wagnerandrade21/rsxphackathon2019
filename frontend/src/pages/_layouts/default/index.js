@@ -82,23 +82,6 @@ export default function DefaultLayout({ children }) {
                   </button>
                 </Link>
               </div>
-
-              <div className="card-header" id="heading-3">
-                <Link to="/desafios">
-                  <button
-                    className="btn btn-link"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#collapse-3"
-                    aria-expanded="true"
-                    aria-controls="collapse-3"
-                  >
-                    <div>
-                      <FaHome className="mr-1" /> Desafios
-                    </div>
-                  </button>
-                </Link>
-              </div>
             </div>
           </div>
         </div>
