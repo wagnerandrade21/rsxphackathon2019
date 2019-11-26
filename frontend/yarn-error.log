@@ -42,6 +42,7 @@ npm manifest:
       "redux": "^4.0.4",
       "redux-saga": "^1.1.1",
       "styled-components": "^4.4.0",
+      "yarn": "^1.19.2"
       "yup": "^0.27.0"
     },
     "scripts": {
@@ -10919,7 +10920,10 @@ Lockfile:
       which-module "^2.0.0"
       y18n "^4.0.0"
       yargs-parser "^13.1.1"
-  
+  yarn@^1.19.2:
+    version "1.19.2"
+    resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.19.2.tgz#cf5fc9b24ad97a11c65d7cb0b2ac945eb936122f"
+    integrity sha512-OdLN/K/sA+KnW4ggNQwHYK6YJdLkSWxbx6IYd+WIQJ6xDfk8CIYKckBfwGxTBmDaEluWs83InzjFCmUqPtpY+w==
   yup@^0.27.0:
     version "0.27.0"
     resolved "https://registry.yarnpkg.com/yup/-/yup-0.27.0.tgz#f8cb198c8e7dd2124beddc2457571329096b06e7"
