@@ -1,30 +1,21 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add framework7-reac
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add polished
 
 PATH: 
-  D:\oracle\product\12.2.0\client_1\bin;d:\oracle\product\12.1.0\client_1\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Dell\Enterprise Manager\msagui;D:\Data Science\Anaconda3;D:\Data Science\Anaconda3\Library\mingw-w64\bin;D:\Data Science\Anaconda3\Library\usr\bin;D:\Data Science\Anaconda3\Library\bin;D:\Data Science\Anaconda3\Scripts;C:\Users\LUCAS\AppData\Local\Microsoft\WindowsApps;C:\Users\LUCAS\AppData\Local\GitHubDesktop\bin;C:\Users\LUCAS\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\LUCAS\AppData\Local\hyper\app-3.0.2\resources\bin;C:\Users\LUCAS\AppData\Local\Yarn\bin;C:\Users\LUCAS\AppData\Roaming\npm;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+  /home/phenriq694/.zplugin/polaris/bin:/home/phenriq694/.zplugin/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/phenriq694/.yarn/bin:/home/phenriq694/.yarn/bin
 
 Yarn version: 
-  1.17.3
+  1.19.1
 
 Node version: 
-  12.8.1
+  12.13.0
 
 Platform: 
-  win32 x64
+  linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/framework7-reac: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65939:18)
-      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140464:22)
-      at Request.emit (events.js:203:13)
-      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141436:10)
-      at Request.emit (events.js:203:13)
-      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141358:12)
-      at Object.onceWrapper (events.js:291:20)
-      at IncomingMessage.emit (events.js:208:15)
-      at endReadableNT (_stream_readable.js:1168:12)
-      at processTicksAndRejections (internal/process/task_queues.js:77:11)
+  Error: getaddrinfo EAI_AGAIN registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26)
 
 npm manifest: 
   {
@@ -51,7 +42,7 @@ npm manifest:
       "redux": "^4.0.4",
       "redux-saga": "^1.1.1",
       "styled-components": "^4.4.0",
-      "yarn": "^1.19.2",
+      "yarn": "^1.19.2"
       "yup": "^0.27.0"
     },
     "scripts": {
@@ -10929,12 +10920,10 @@ Lockfile:
       which-module "^2.0.0"
       y18n "^4.0.0"
       yargs-parser "^13.1.1"
-  
   yarn@^1.19.2:
     version "1.19.2"
     resolved "https://registry.yarnpkg.com/yarn/-/yarn-1.19.2.tgz#cf5fc9b24ad97a11c65d7cb0b2ac945eb936122f"
     integrity sha512-OdLN/K/sA+KnW4ggNQwHYK6YJdLkSWxbx6IYd+WIQJ6xDfk8CIYKckBfwGxTBmDaEluWs83InzjFCmUqPtpY+w==
-  
   yup@^0.27.0:
     version "0.27.0"
     resolved "https://registry.yarnpkg.com/yup/-/yup-0.27.0.tgz#f8cb198c8e7dd2124beddc2457571329096b06e7"
