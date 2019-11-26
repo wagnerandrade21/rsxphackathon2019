@@ -10,14 +10,15 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  const signed = true;
+  
+  const signed = !(rest.path === '/');
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
   }
 
   if (signed && !isPrivate) {
-    return <Redirect to="/home" />;
+    return <Redirect to="/feed" />;
   }
 
   const Layout = signed ? DefaultLayout : AuthLayout;

@@ -34,7 +34,7 @@ export default function DefaultLayout({ children }) {
     <Wrapper>
       <Aside visibleAside={visibleAside}>
         <div className="logo">
-          <Link to="/home">
+          <Link to="/feed">
             <a>Influenciador</a><br></br>
             <a>Educacional</a>
           </Link>
@@ -51,7 +51,7 @@ export default function DefaultLayout({ children }) {
             <div className="card">
 
               <div className="card-header" id="heading-1">
-                <Link to="/home">
+                <Link to="/feed">
                   <button
                     className="btn btn-link"
                     type="button"
@@ -61,7 +61,7 @@ export default function DefaultLayout({ children }) {
                     aria-controls="collapse-1"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Home
+                      <FaHome className="mr-1" /> Feed
                     </div>
                   </button>
                 </Link>
@@ -79,6 +79,41 @@ export default function DefaultLayout({ children }) {
                   >
                     <div>
                       <FaHome className="mr-1" /> Projetos
+                    </div>
+                  </button>
+                </Link>
+              </div>
+              
+
+              <div className="card-header" id="heading-2">
+                <Link to="/seed">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-2"
+                    aria-expanded="true"
+                    aria-controls="collapse-2"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Seed
+                    </div>
+                  </button>
+                </Link>
+              </div>
+
+              <div className="card-header" id="heading-3">
+                <Link to="/trilhas">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-3"
+                    aria-expanded="true"
+                    aria-controls="collapse-3"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Trilhas
                     </div>
                   </button>
                 </Link>
