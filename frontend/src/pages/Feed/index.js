@@ -7,10 +7,13 @@ import NewPost from './Components/NewPost';
 
 function Feed() {
   return (
-    <>
-      <NewPost />
-      <PostList />
-    </>
+      <>  
+        <a>&nbsp;</a>
+        <div className="content">
+          <NewPost />
+          <PostList />
+        </div>
+      </>
   );
 }
 
