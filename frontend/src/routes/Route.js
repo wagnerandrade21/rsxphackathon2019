@@ -10,7 +10,11 @@ export default function RouteWrapper({
   isPrivate,
   ...rest
 }) {
-  const signed = true;
+  console.log(rest)
+  // console.log(!rest.path == '/')
+  // console.log(rest.history.action === 'PUSH')
+  // console.log(!(rest.path === '/' && rest.history.action == 'PUSH'))
+  const signed = !(!!rest.path === '/');
 
   if (!signed && isPrivate) {
     return <Redirect to="/" />;
