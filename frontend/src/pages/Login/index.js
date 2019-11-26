@@ -7,7 +7,7 @@ import {Content} from './style'
 export default function Login(props) {
  
   function handleSubmit(data) {
-    props.history.push("/home");
+    props.history.push("/feed");
   }
 
   return (
