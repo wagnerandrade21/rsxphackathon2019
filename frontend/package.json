@@ -5,6 +5,7 @@
   "dependencies": {
     "@rocketseat/unform": "^1.6.1",
     "bootstrap": "^4.3.1",
+    "date-fns": "^2.8.1",
     "history": "^4.10.1",
     "immer": "^4.0.1",
     "prop-types": "^15.7.2",

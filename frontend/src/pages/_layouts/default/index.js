@@ -35,7 +35,8 @@ export default function DefaultLayout({ children }) {
       <Aside visibleAside={visibleAside}>
         <div className="logo">
           <Link to="/home">
-            <a>Influenciador</a><br></br>
+            <a>Influenciador</a>
+            <br></br>
             <a>Educacional</a>
           </Link>
         </div>
@@ -44,12 +45,10 @@ export default function DefaultLayout({ children }) {
           <img src={imgProfile} alt="perfil" />
           <Link to="/perfil">Hackathon</Link>
         </div>
-        
 
         <div className="menu">
           <div className="accordion" id="collapse">
             <div className="card">
-
               <div className="card-header" id="heading-1">
                 <Link to="/home">
                   <button
@@ -79,6 +78,23 @@ export default function DefaultLayout({ children }) {
                   >
                     <div>
                       <FaHome className="mr-1" /> Projetos
+                    </div>
+                  </button>
+                </Link>
+              </div>
+
+              <div className="card-header" id="heading-3">
+                <Link to="/desafios">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-3"
+                    aria-expanded="true"
+                    aria-controls="collapse-3"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Desafios
                     </div>
                   </button>
                 </Link>
