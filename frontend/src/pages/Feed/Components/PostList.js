@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 import PostItem from './PostItem'
 
@@ -24,8 +24,8 @@ class PostList extends Component {
       <div className="postList">   
         {this.state.posts.map(post => <PostItem key={post.id} {...post} />)}
       </div>
-    )
+    );
   }
 }
 
-export default PostList
+export default PostList;

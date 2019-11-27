@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom';
 
 import {
   FaBars,
-  FaBan,
   FaHome,
   FaPowerOff,
-  FaBell,
-  FaAngleRight,
-  FaEnvelope,
 } from 'react-icons/fa';
 
 import imgLogo from '../../../assets/logo-text.png';
@@ -35,7 +31,8 @@ export default function DefaultLayout({ children }) {
       <Aside visibleAside={visibleAside}>
         <div className="logo">
           <Link to="/feed">
-            <a>Influenciador</a><br></br>
+            <a>Influenciador</a>
+            <br></br>
             <a>Educacional</a>
           </Link>
         </div>
@@ -44,12 +41,10 @@ export default function DefaultLayout({ children }) {
           <img src={imgProfile} alt="perfil" />
           <Link to="/perfil">Hackathon</Link>
         </div>
-        
 
         <div className="menu">
           <div className="accordion" id="collapse">
             <div className="card">
-
               <div className="card-header" id="heading-1">
                 <Link to="/feed">
                   <button
@@ -68,6 +63,23 @@ export default function DefaultLayout({ children }) {
               </div>
 
               <div className="card-header" id="heading-2">
+                <Link to="/instituicao">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-2"
+                    aria-expanded="true"
+                    aria-controls="collapse-2"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Instituição
+                    </div>
+                  </button>
+                </Link>
+              </div>
+              
+              <div className="card-header" id="heading-2">
                 <Link to="/projetos">
                   <button
                     className="btn btn-link"
@@ -84,7 +96,6 @@ export default function DefaultLayout({ children }) {
                 </Link>
               </div>
               
-
               <div className="card-header" id="heading-2">
                 <Link to="/seed">
                   <button
@@ -96,21 +107,21 @@ export default function DefaultLayout({ children }) {
                     aria-controls="collapse-2"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Seed
+                      <FaHome className="mr-1" /> Seeds
                     </div>
                   </button>
                 </Link>
               </div>
-
-              <div className="card-header" id="heading-3">
+              
+              <div className="card-header" id="heading-2">
                 <Link to="/trilhas">
                   <button
                     className="btn btn-link"
                     type="button"
                     data-toggle="collapse"
-                    data-target="#collapse-3"
+                    data-target="#collapse-2"
                     aria-expanded="true"
-                    aria-controls="collapse-3"
+                    aria-controls="collapse-2"
                   >
                     <div>
                       <FaHome className="mr-1" /> Trilhas
@@ -118,20 +129,19 @@ export default function DefaultLayout({ children }) {
                   </button>
                 </Link>
               </div>
-
-
-              <div className="card-header" id="heading-4">
-                <Link to="/instituicao">
+              
+              <div className="card-header" id="heading-2">
+                <Link to="/desafios">
                   <button
                     className="btn btn-link"
                     type="button"
                     data-toggle="collapse"
-                    data-target="#collapse-4"
+                    data-target="#collapse-2"
                     aria-expanded="true"
-                    aria-controls="collapse-4"
+                    aria-controls="collapse-2"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Instituição
+                      <FaHome className="mr-1" /> Desafios
                     </div>
                   </button>
                 </Link>
