@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom';
 
 import {
   FaBars,
-  FaBan,
   FaHome,
   FaPowerOff,
-  FaBell,
-  FaAngleRight,
-  FaEnvelope,
 } from 'react-icons/fa';
 
 import imgLogo from '../../../assets/logo-text.png';
@@ -34,7 +30,7 @@ export default function DefaultLayout({ children }) {
     <Wrapper>
       <Aside visibleAside={visibleAside}>
         <div className="logo">
-          <Link to="/home">
+          <Link to="/feed">
             <a>Influenciador</a>
             <br></br>
             <a>Educacional</a>

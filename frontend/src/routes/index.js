@@ -30,6 +30,7 @@ export default function Routes() {
         isPrivate
       />
       <Route path="/desafios" component={Desafios} isPrivate />
+      <Route path="*" component={() => <h1>Página não econtrada!</h1>} />
     </Switch>
   );
 }
