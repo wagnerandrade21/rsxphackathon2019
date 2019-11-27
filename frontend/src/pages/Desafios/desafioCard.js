@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import { Card } from './styles';
 
@@ -12,6 +13,11 @@ export default function DesafioCard({ desafio }) {
       {/* <a href="#" className="btn btn-primary">
         Go somewhere
       </a> */}
+      <Link to="/Desafios/detalhe">
+        <a href="#" className="btn btn-primary">
+          Detalhes
+        </a>
+      </Link>
       <p className="card-text">{desafio.status}</p>
     </Card>
   );

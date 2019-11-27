@@ -42,14 +42,16 @@ export default function Desafios() {
 
       <div className="content">
         <div className="row">
-          <div className="col-lg-12">
-            <div className="card">
-              <img src="..." className="card-img-top" alt="..." />
-              {desafios.map(x => {
-                return <DesafioCard desafio={x} />;
-              })}
-            </div>
-          </div>
+          {desafios.map(x => {
+            return (
+              <div className="col-lg-4">
+                <div className="card">
+                  <img src="..." className="card-img-top" alt="..." />
+                  <DesafioCard className="col-sm-12" desafio={x} />;
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

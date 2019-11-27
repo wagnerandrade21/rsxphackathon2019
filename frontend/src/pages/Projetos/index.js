@@ -1,57 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { format } from 'date-fns';
+import api from '../../services/api';
 
 export default function Projetos() {
   const [projetos, setProjetos] = useState([]);
 
   useEffect(() => {
-    setProjetos([
-      {
-        titulo: 'Projeto A',
-        descricao: 'Descricoes do projeto A.',
-        patrocinador: 'Marcopolo',
-        participantes: ['Pedro', 'Marcos'],
-        dataInicial: new Date(),
-        dataFinal: new Date(),
-        status: 'Aguardando',
-      },
-      {
-        titulo: 'Projeto B',
-        descricao: 'Descricoes do projeto B.',
-        patrocinador: 'Marcopolo',
-        participantes: ['Pedro', 'Marcos'],
-        dataInicial: new Date(),
-        dataFinal: new Date(),
-        status: 'Aguardando',
-      },
-      {
-        titulo: 'Projeto C',
-        descricao: 'Descricoes do projeto C.',
-        patrocinador: 'Marcopolo',
-        participantes: ['Pedro', 'Marcos'],
-        dataInicial: new Date(),
-        dataFinal: new Date(),
-        status: 'Aguardando',
-      },
-      {
-        titulo: 'Projeto D',
-        descricao: 'Descricoes do projeto C.',
-        patrocinador: 'Marcopolo',
-        participantes: ['Pedro', 'Marcos'],
-        dataInicial: new Date(),
-        dataFinal: new Date(),
-        status: 'Aguardando',
-      },
-      {
-        titulo: 'Projeto E',
-        descricao: 'Descricoes do projeto C.',
-        patrocinador: 'Marcopolo',
-        participantes: ['Pedro', 'Marcos'],
-        dataInicial: new Date(),
-        dataFinal: new Date(),
-        status: 'Aguardando',
-      },
-    ]);
+    async function carregaProjetos() {
+      try {
+        const response = await api.get('/Projetos');
+        setProjetos(response.data);
+      } catch (err) {
+        alert(err);
+      }
+    }
+
+    carregaProjetos();
   }, []);
 
   return (
@@ -103,10 +67,10 @@ export default function Projetos() {
                         <strong>{x.participantes.join(', ')}</strong>
                         <br />
                         DataInicial:
-                        <strong>{format(x.dataInicial, 'dd/MM/yyyy')}</strong>
+                        {/* <strong>{format(x.dataInicial, 'dd/MM/yyyy')}</strong> */}
                         <br />
                         DataInicial:
-                        <strong>{format(x.dataFinal, 'dd/MM/yyyy')}</strong>
+                        {/* <strong>{format(x.dataFinal, 'dd/MM/yyyy')}</strong> */}
                         <br />
                         status: <strong>{x.status}</strong>
                       </div>
