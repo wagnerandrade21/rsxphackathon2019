@@ -34,7 +34,7 @@ export default function DefaultLayout({ children }) {
     <Wrapper>
       <Aside visibleAside={visibleAside}>
         <div className="logo">
-          <Link to="/home">
+          <Link to="/feed">
             <a>Influenciador</a>
             <br></br>
             <a>Educacional</a>
