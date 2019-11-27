@@ -50,7 +50,7 @@ export default function DefaultLayout({ children }) {
           <div className="accordion" id="collapse">
             <div className="card">
               <div className="card-header" id="heading-1">
-                <Link to="/home">
+                <Link to="/feed">
                   <button
                     className="btn btn-link"
                     type="button"
@@ -60,12 +60,29 @@ export default function DefaultLayout({ children }) {
                     aria-controls="collapse-1"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Home
+                      <FaHome className="mr-1" /> Feed
                     </div>
                   </button>
                 </Link>
               </div>
 
+              <div className="card-header" id="heading-2">
+                <Link to="/instituicao">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-2"
+                    aria-expanded="true"
+                    aria-controls="collapse-2"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Instituição
+                    </div>
+                  </button>
+                </Link>
+              </div>
+              
               <div className="card-header" id="heading-2">
                 <Link to="/projetos">
                   <button
@@ -82,6 +99,58 @@ export default function DefaultLayout({ children }) {
                   </button>
                 </Link>
               </div>
+              
+              <div className="card-header" id="heading-2">
+                <Link to="/projetos">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-2"
+                    aria-expanded="true"
+                    aria-controls="collapse-2"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Projetos
+                    </div>
+                  </button>
+                </Link>
+              </div>
+              
+              <div className="card-header" id="heading-2">
+                <Link to="/projetos">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-2"
+                    aria-expanded="true"
+                    aria-controls="collapse-2"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Projetos
+                    </div>
+                  </button>
+                </Link>
+              </div>
+              
+              <div className="card-header" id="heading-2">
+                <Link to="/projetos">
+                  <button
+                    className="btn btn-link"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#collapse-2"
+                    aria-expanded="true"
+                    aria-controls="collapse-2"
+                  >
+                    <div>
+                      <FaHome className="mr-1" /> Projetos
+                    </div>
+                  </button>
+                </Link>
+              </div>
+
             </div>
           </div>
         </div>
