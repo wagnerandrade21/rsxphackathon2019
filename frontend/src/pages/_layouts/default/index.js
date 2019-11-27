@@ -101,7 +101,7 @@ export default function DefaultLayout({ children }) {
               </div>
               
               <div className="card-header" id="heading-2">
-                <Link to="/projetos">
+                <Link to="/seed">
                   <button
                     className="btn btn-link"
                     type="button"
@@ -111,14 +111,14 @@ export default function DefaultLayout({ children }) {
                     aria-controls="collapse-2"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Projetos
+                      <FaHome className="mr-1" /> Seeds
                     </div>
                   </button>
                 </Link>
               </div>
               
               <div className="card-header" id="heading-2">
-                <Link to="/projetos">
+                <Link to="/trilhas">
                   <button
                     className="btn btn-link"
                     type="button"
@@ -128,14 +128,14 @@ export default function DefaultLayout({ children }) {
                     aria-controls="collapse-2"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Projetos
+                      <FaHome className="mr-1" /> Trilhas
                     </div>
                   </button>
                 </Link>
               </div>
               
               <div className="card-header" id="heading-2">
-                <Link to="/projetos">
+                <Link to="/desafios">
                   <button
                     className="btn btn-link"
                     type="button"
@@ -145,7 +145,7 @@ export default function DefaultLayout({ children }) {
                     aria-controls="collapse-2"
                   >
                     <div>
-                      <FaHome className="mr-1" /> Projetos
+                      <FaHome className="mr-1" /> Desafios
                     </div>
                   </button>
                 </Link>
