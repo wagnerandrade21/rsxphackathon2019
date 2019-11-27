@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { format } from 'date-fns';
+import { format, parseISO } from 'date-fns';
 import api from '../../services/api';
 
 export default function Projetos() {
@@ -7,12 +7,8 @@ export default function Projetos() {
 
   useEffect(() => {
     async function carregaProjetos() {
-      try {
-        const response = await api.get('/Projetos');
-        setProjetos(response.data);
-      } catch (err) {
-        alert(err);
-      }
+      const response = await api.get('/Projetos');
+      setProjetos(response.data);
     }
 
     carregaProjetos();
@@ -67,10 +63,14 @@ export default function Projetos() {
                         <strong>{x.participantes.join(', ')}</strong>
                         <br />
                         DataInicial:
-                        {/* <strong>{format(x.dataInicial, 'dd/MM/yyyy')}</strong> */}
+                        <strong>
+                          {format(parseISO(x.dataInicial), 'dd/MM/yyyy')}
+                        </strong>
                         <br />
                         DataInicial:
-                        {/* <strong>{format(x.dataFinal, 'dd/MM/yyyy')}</strong> */}
+                        <strong>
+                          {format(parseISO(x.dataFinal), 'dd/MM/yyyy')}
+                        </strong>
                         <br />
                         status: <strong>{x.status}</strong>
                       </div>

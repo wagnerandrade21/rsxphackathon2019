@@ -1,16 +1,11 @@
-import React, { Component } from 'react';
-
-import PostItem from './PostItem';
-import avatar from '../../../assets/user.svg';
-
-class PostList extends Component {
-  state = {
-    posts: [
+class PostsController {
+  async index(req, res) {
+    return res.json([
       {
         id: 1,
         author: {
           name: 'Instituição 1',
-          avatar: avatar,
+          avatar: 'user.svg',
         },
         date: '04 Jun 2019',
         content:
@@ -21,7 +16,7 @@ class PostList extends Component {
         id: 3,
         author: {
           name: 'Neil Cook',
-          avatar: avatar,
+          avatar: 'user.svg',
         },
         date: '04 Jun 2019',
         content:
@@ -32,7 +27,7 @@ class PostList extends Component {
         id: 6,
         author: {
           name: 'Gabriel Lisboa',
-          avatar: avatar,
+          avatar: 'user.svg',
         },
         date: '04 Jun 2019',
         content:
@@ -40,18 +35,8 @@ class PostList extends Component {
 
         comments: [],
       },
-    ],
-  };
-
-  render() {
-    return (
-      <div className="postList">
-        {this.state.posts.map(post => (
-          <PostItem key={post.id} {...post} />
-        ))}
-      </div>
-    );
+    ]);
   }
 }
 
-export default PostList;
+export default new PostsController();
