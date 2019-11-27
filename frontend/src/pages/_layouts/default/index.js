@@ -4,12 +4,8 @@ import { Link } from 'react-router-dom';
 
 import {
   FaBars,
-  FaBan,
   FaHome,
   FaPowerOff,
-  FaBell,
-  FaAngleRight,
-  FaEnvelope,
 } from 'react-icons/fa';
 
 import imgLogo from '../../../assets/logo-text.png';
