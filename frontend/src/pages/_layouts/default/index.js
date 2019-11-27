@@ -37,7 +37,6 @@ export default function DefaultLayout({ children }) {
           <Link to="/home">
             <a>Influenciador</a>
             <br></br>
-            <br></br>
             <a>Educacional</a>
           </Link>
         </div>
