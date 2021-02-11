@@ -14,34 +14,6 @@ export default function Desafios() {
     }
 
     carregaDesafios();
-
-    // setDesafios([
-    //   {
-    //     titulo: 'Desafio A',
-    //     descricao: 'Descricoes do desafio A.',
-    //     status: 'Concluído',
-    //   },
-    //   {
-    //     titulo: 'Desafio B',
-    //     descricao: 'Descricoes do desafio B.',
-    //     status: 'Aguardando',
-    //   },
-    //   {
-    //     titulo: 'Desafio C',
-    //     descricao: 'Descricoes do desafio C.',
-    //     status: 'Aguardando',
-    //   },
-    //   {
-    //     titulo: 'Desafio D',
-    //     descricao: 'Descricoes do desafio C.',
-    //     status: 'Aguardando',
-    //   },
-    //   {
-    //     titulo: 'Desafio E',
-    //     descricao: 'Descricoes do desafio C.',
-    //     status: 'Aguardando',
-    //   },
-    // ]);
   }, []);
 
   return (
@@ -54,7 +26,7 @@ export default function Desafios() {
             return (
               <div className="col-lg-4">
                 <div className="card">
-                  <img src="..." className="card-img-top" alt="..." />
+                  <img className="card-img-top" alt="..." />
                   <DesafioCard className="col-sm-12" desafio={x} />;
                 </div>
               </div>
